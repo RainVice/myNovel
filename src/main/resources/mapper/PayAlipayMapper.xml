@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rainvice.mynovel.dao.mapper.PayAlipayMapper">
+
+    <resultMap id="BaseResultMap" type="com.rainvice.mynovel.dao.entity.PayAlipay">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="outTradeNo" column="out_trade_no" jdbcType="VARCHAR"/>
+            <result property="tradeNo" column="trade_no" jdbcType="VARCHAR"/>
+            <result property="buyerId" column="buyer_id" jdbcType="VARCHAR"/>
+            <result property="tradeStatus" column="trade_status" jdbcType="VARCHAR"/>
+            <result property="totalAmount" column="total_amount" jdbcType="OTHER"/>
+            <result property="receiptAmount" column="receipt_amount" jdbcType="OTHER"/>
+            <result property="invoiceAmount" column="invoice_amount" jdbcType="OTHER"/>
+            <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+            <result property="gmtPayment" column="gmt_payment" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,out_trade_no,trade_no,
+        buyer_id,trade_status,total_amount,
+        receipt_amount,invoice_amount,gmt_create,
+        gmt_payment,create_time,update_time
+    </sql>
+</mapper>

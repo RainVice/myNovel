@@ -124,19 +124,19 @@
         </dependency>
 
         <!-- MQ -->
-        <dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>rabbitmq</artifactId>
-            <version>${rabbitmq.version}</version>
-            <scope>test</scope>
-        </dependency>
+        <!--<dependency>-->
+        <!--    <groupId>org.testcontainers</groupId>-->
+        <!--    <artifactId>rabbitmq</artifactId>-->
+        <!--    <version>${rabbitmq.version}</version>-->
+        <!--    <scope>test</scope>-->
+        <!--</dependency>-->
 
         <!-- XXL-JOB分布式任务调度 -->
-        <dependency>
-            <groupId>com.xuxueli</groupId>
-            <artifactId>xxl-job-core</artifactId>
-            <version>${xxl-job.version}</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--    <groupId>com.xuxueli</groupId>-->
+        <!--    <artifactId>xxl-job-core</artifactId>-->
+        <!--    <version>${xxl-job.version}</version>-->
+        <!--</dependency>-->
 
         <!-- sentinel -->
         <dependency>
@@ -201,6 +201,11 @@
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
             <version>${knife4j-openapi3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

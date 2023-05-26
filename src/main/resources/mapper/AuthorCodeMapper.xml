@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rainvice.mynovel.dao.mapper.AuthorCodeMapper">
+
+    <resultMap id="BaseResultMap" type="com.rainvice.mynovel.dao.entity.AuthorCode">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="inviteCode" column="invite_code" jdbcType="VARCHAR"/>
+            <result property="validityTime" column="validity_time" jdbcType="TIMESTAMP"/>
+            <result property="isUsed" column="is_used" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,invite_code,validity_time,
+        is_used,create_time,update_time
+    </sql>
+</mapper>
