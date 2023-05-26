@@ -10,3 +10,14 @@ spring:
       host: 127.0.0.1
       port: 6379
       password: test123456
+
+--- # 自定义配置 ---
+
+# 项目配置
+novel:
+  # 跨域配置
+  cors:
+    # 允许跨域的域名
+    allow-origins:
+      - http://localhost:1024
+      - http://localhost:8080

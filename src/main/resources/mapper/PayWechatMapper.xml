@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rainvice.mynovel.dao.mapper.PayWechatMapper">
+
+    <resultMap id="BaseResultMap" type="com.rainvice.mynovel.dao.entity.PayWechat">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="outTradeNo" column="out_trade_no" jdbcType="VARCHAR"/>
+            <result property="transactionId" column="transaction_id" jdbcType="VARCHAR"/>
+            <result property="tradeType" column="trade_type" jdbcType="VARCHAR"/>
+            <result property="tradeState" column="trade_state" jdbcType="VARCHAR"/>
+            <result property="tradeStateDesc" column="trade_state_desc" jdbcType="VARCHAR"/>
+            <result property="amount" column="amount" jdbcType="OTHER"/>
+            <result property="payerTotal" column="payer_total" jdbcType="OTHER"/>
+            <result property="successTime" column="success_time" jdbcType="TIMESTAMP"/>
+            <result property="payerOpenid" column="payer_openid" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,out_trade_no,transaction_id,
+        trade_type,trade_state,trade_state_desc,
+        amount,payer_total,success_time,
+        payer_openid,create_time,update_time
+    </sql>
+</mapper>
