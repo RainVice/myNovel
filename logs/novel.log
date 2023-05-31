@@ -1,0 +1,186 @@
+2023-05-27 20:29:50,309 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.0.Final
+2023-05-27 20:29:50,370 INFO (StartupInfoLogger.java:51)- Starting MyNovelApplication using Java 17.0.6 with PID 5416 (D:\Project\Java Project\JavaEE\SpringBoot\myNovel\target\classes started by cheng in D:\Project\Java Project\JavaEE\SpringBoot\myNovel)
+2023-05-27 20:29:50,370 DEBUG (StartupInfoLogger.java:52)- Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-27 20:29:50,372 INFO (SpringApplication.java:639)- The following 1 profile is active: "dev"
+2023-05-27 20:29:51,688 INFO (RepositoryConfigurationDelegate.java:291)- Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-27 20:29:51,692 INFO (RepositoryConfigurationDelegate.java:138)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-27 20:29:51,728 INFO (RepositoryConfigurationDelegate.java:208)- Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2023-05-27 20:29:52,554 WARN (Bootstrap.java:68)- UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-05-27 20:29:52,581 INFO (ServletContextImpl.java:372)- Initializing Spring embedded WebApplicationContext
+2023-05-27 20:29:52,581 INFO (ServletWebServerApplicationContext.java:291)- Root WebApplicationContext: initialization completed in 1958 ms
+2023-05-27 20:29:56,109 INFO (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2023-05-27 20:29:56,120 INFO (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-27 20:29:56,121 INFO (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2023-05-27 20:29:56,122 INFO (RAMJobStore.java:155)- RAMJobStore initialized.
+2023-05-27 20:29:56,123 INFO (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-05-27 20:29:56,123 INFO (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-05-27 20:29:56,123 INFO (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2023-05-27 20:29:56,123 INFO (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@662b199
+2023-05-27 20:29:56,394 WARN (UserDetailsServiceAutoConfiguration.java:87)- 
+
+Using generated security password: 1ffe4ae4-25f0-456c-844f-7679a588ee7c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-27 20:29:56,623 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@407ff25f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ba8fbc8, org.springframework.security.web.context.SecurityContextHolderFilter@2a5d9ede, org.springframework.security.web.header.HeaderWriterFilter@709c6768, org.springframework.web.filter.CorsFilter@fa11fda, org.springframework.security.web.csrf.CsrfFilter@76685ab0, org.springframework.security.web.authentication.logout.LogoutFilter@672549f3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@273e622f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52dc71b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@113a89c5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53850535, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c3f81ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@500beb9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55da6bf, org.springframework.security.web.access.ExceptionTranslationFilter@5924ea91, org.springframework.security.web.access.intercept.AuthorizationFilter@25dacc5a]
+2023-05-27 20:29:56,722 INFO (EndpointLinksResolver.java:58)- Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-27 20:29:57,194 INFO (ConditionEvaluationReportLogger.java:82)- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-27 20:29:57,254 ERROR (SpringApplication.java:823)- Application run failed
+java.lang.IllegalStateException: No CacheResolver specified, and no unique bean of type CacheManager found. Mark one as primary or declare a specific CacheManager to use.
+	at org.springframework.cache.interceptor.CacheAspectSupport.afterSingletonsInstantiated(CacheAspectSupport.java:223)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:984)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.rainvice.mynovel.MyNovelApplication.main(MyNovelApplication.java:27)
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.cache.CacheManager' available: expected single matching bean but found 2: caffeineCacheManager,redisCacheManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1299)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:484)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:332)
+	at org.springframework.cache.interceptor.CacheAspectSupport.afterSingletonsInstantiated(CacheAspectSupport.java:220)
+	... 10 common frames omitted
+2023-05-27 20:29:57,264 INFO (SchedulerFactoryBean.java:847)- Shutting down Quartz Scheduler
+2023-05-27 20:29:57,265 INFO (QuartzScheduler.java:666)- Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-05-27 20:29:57,265 INFO (QuartzScheduler.java:585)- Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-27 20:29:57,265 INFO (QuartzScheduler.java:740)- Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-05-27 21:52:35,905 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.0.Final
+2023-05-27 21:52:35,943 INFO (StartupInfoLogger.java:51)- Starting MyNovelApplication using Java 17.0.6 with PID 5624 (D:\Project\Java Project\JavaEE\SpringBoot\myNovel\target\classes started by cheng in D:\Project\Java Project\JavaEE\SpringBoot\myNovel)
+2023-05-27 21:52:35,943 DEBUG (StartupInfoLogger.java:52)- Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-27 21:52:35,944 INFO (SpringApplication.java:639)- The following 1 profile is active: "dev"
+2023-05-27 21:52:37,201 INFO (RepositoryConfigurationDelegate.java:291)- Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-27 21:52:37,204 INFO (RepositoryConfigurationDelegate.java:138)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-27 21:52:37,233 INFO (RepositoryConfigurationDelegate.java:208)- Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-05-27 21:52:38,083 WARN (Bootstrap.java:68)- UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-05-27 21:52:38,107 INFO (ServletContextImpl.java:372)- Initializing Spring embedded WebApplicationContext
+2023-05-27 21:52:38,108 INFO (ServletWebServerApplicationContext.java:291)- Root WebApplicationContext: initialization completed in 1942 ms
+2023-05-27 21:52:38,647 WARN (TableInfoHelper.java:347)- Can not find table primary key in Class: "com.rainvice.mynovel.dto.resp.ImgVerifyCodeRespDto".
+2023-05-27 21:52:38,648 WARN (DefaultSqlInjector.java:56)- class com.rainvice.mynovel.dto.resp.ImgVerifyCodeRespDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-05-27 21:52:40,600 INFO (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2023-05-27 21:52:40,609 INFO (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-27 21:52:40,610 INFO (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2023-05-27 21:52:40,611 INFO (RAMJobStore.java:155)- RAMJobStore initialized.
+2023-05-27 21:52:40,611 INFO (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-05-27 21:52:40,612 INFO (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-05-27 21:52:40,612 INFO (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2023-05-27 21:52:40,612 INFO (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2370c90
+2023-05-27 21:52:40,852 WARN (UserDetailsServiceAutoConfiguration.java:87)- 
+
+Using generated security password: cb123372-6242-430d-aaf0-015a72bc2291
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-27 21:52:40,985 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3894d1b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f6b1f19, org.springframework.security.web.context.SecurityContextHolderFilter@7e9ea888, org.springframework.security.web.header.HeaderWriterFilter@6e669b5c, org.springframework.web.filter.CorsFilter@32646ecf, org.springframework.security.web.csrf.CsrfFilter@4a985388, org.springframework.security.web.authentication.logout.LogoutFilter@b97f195, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@330d557e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ffcb1bd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@253c7189, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7fd3197b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e4a6afd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d87e7f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cfe72b0, org.springframework.security.web.access.ExceptionTranslationFilter@58c93be3, org.springframework.security.web.access.intercept.AuthorizationFilter@21b792c2]
+2023-05-27 21:52:41,053 INFO (EndpointLinksResolver.java:58)- Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-27 21:52:41,102 INFO (ConditionEvaluationReportLogger.java:82)- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-27 21:52:41,125 ERROR (SpringApplication.java:823)- Application run failed
+java.lang.IllegalStateException: No CacheResolver specified, and no unique bean of type CacheManager found. Mark one as primary or declare a specific CacheManager to use.
+	at org.springframework.cache.interceptor.CacheAspectSupport.afterSingletonsInstantiated(CacheAspectSupport.java:223)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:984)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.rainvice.mynovel.MyNovelApplication.main(MyNovelApplication.java:27)
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.cache.CacheManager' available: expected single matching bean but found 2: caffeineCacheManager,redisCacheManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1299)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:484)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:332)
+	at org.springframework.cache.interceptor.CacheAspectSupport.afterSingletonsInstantiated(CacheAspectSupport.java:220)
+	... 10 common frames omitted
+2023-05-27 21:52:41,132 INFO (SchedulerFactoryBean.java:847)- Shutting down Quartz Scheduler
+2023-05-27 21:52:41,132 INFO (QuartzScheduler.java:666)- Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-05-27 21:52:41,132 INFO (QuartzScheduler.java:585)- Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-27 21:52:41,132 INFO (QuartzScheduler.java:740)- Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-05-27 22:01:33,490 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.0.Final
+2023-05-27 22:01:33,548 INFO (StartupInfoLogger.java:51)- Starting MyNovelApplication using Java 17.0.6 with PID 14800 (D:\Project\Java Project\JavaEE\SpringBoot\myNovel\target\classes started by cheng in D:\Project\Java Project\JavaEE\SpringBoot\myNovel)
+2023-05-27 22:01:33,549 DEBUG (StartupInfoLogger.java:52)- Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-27 22:01:33,551 INFO (SpringApplication.java:639)- The following 1 profile is active: "dev"
+2023-05-27 22:01:34,783 INFO (RepositoryConfigurationDelegate.java:291)- Multiple Spring Data modules found, entering strict repository configuration mode
+2023-05-27 22:01:34,785 INFO (RepositoryConfigurationDelegate.java:138)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-27 22:01:34,812 INFO (RepositoryConfigurationDelegate.java:208)- Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-05-27 22:01:35,565 WARN (Bootstrap.java:68)- UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-05-27 22:01:35,582 INFO (ServletContextImpl.java:372)- Initializing Spring embedded WebApplicationContext
+2023-05-27 22:01:35,582 INFO (ServletWebServerApplicationContext.java:291)- Root WebApplicationContext: initialization completed in 1755 ms
+2023-05-27 22:01:36,105 WARN (TableInfoHelper.java:347)- Can not find table primary key in Class: "com.rainvice.mynovel.dto.resp.ImgVerifyCodeRespDto".
+2023-05-27 22:01:36,105 WARN (DefaultSqlInjector.java:56)- class com.rainvice.mynovel.dto.resp.ImgVerifyCodeRespDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-05-27 22:01:37,844 INFO (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2023-05-27 22:01:37,855 INFO (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-05-27 22:01:37,855 INFO (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2023-05-27 22:01:37,856 INFO (RAMJobStore.java:155)- RAMJobStore initialized.
+2023-05-27 22:01:37,857 INFO (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-05-27 22:01:37,857 INFO (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-05-27 22:01:37,857 INFO (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2023-05-27 22:01:37,857 INFO (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2370c90
+2023-05-27 22:01:38,118 WARN (UserDetailsServiceAutoConfiguration.java:87)- 
+
+Using generated security password: 2cbdbab2-4037-4d50-8ccf-374b1ccfd9cf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-27 22:01:38,251 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3894d1b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f6b1f19, org.springframework.security.web.context.SecurityContextHolderFilter@7e9ea888, org.springframework.security.web.header.HeaderWriterFilter@6e669b5c, org.springframework.web.filter.CorsFilter@8b1202a, org.springframework.security.web.csrf.CsrfFilter@4a985388, org.springframework.security.web.authentication.logout.LogoutFilter@b97f195, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@330d557e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ffcb1bd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@253c7189, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7fd3197b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e4a6afd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d87e7f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cfe72b0, org.springframework.security.web.access.ExceptionTranslationFilter@58c93be3, org.springframework.security.web.access.intercept.AuthorizationFilter@21b792c2]
+2023-05-27 22:01:38,326 INFO (EndpointLinksResolver.java:58)- Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-27 22:01:38,411 INFO (Undertow.java:120)- starting server: Undertow - 2.3.6.Final
+2023-05-27 22:01:38,417 INFO (Xnio.java:95)- XNIO version 3.8.8.Final
+2023-05-27 22:01:38,424 INFO (NioXnio.java:58)- XNIO NIO Implementation Version 3.8.8.Final
+2023-05-27 22:01:38,443 INFO (Version.java:55)- JBoss Threads version 3.5.0.Final
+2023-05-27 22:01:38,482 INFO (UndertowWebServer.java:121)- Undertow started on port(s) 8888 (http)
+2023-05-27 22:01:38,483 INFO (SchedulerFactoryBean.java:729)- Starting Quartz Scheduler now
+2023-05-27 22:01:38,483 INFO (QuartzScheduler.java:547)- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-05-27 22:01:38,497 INFO (StartupInfoLogger.java:57)- Started MyNovelApplication in 5.565 seconds (process running for 6.344)
+2023-05-27 22:01:38,499 INFO (MyNovelApplication.java:35)- 加载了如下缓存管理器：
+2023-05-27 22:01:38,499 INFO (MyNovelApplication.java:37)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2023-05-27 22:01:38,500 INFO (MyNovelApplication.java:38)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2023-05-27 22:01:38,500 INFO (MyNovelApplication.java:37)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2023-05-27 22:01:38,500 INFO (MyNovelApplication.java:38)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2023-05-27 22:01:38,974 INFO (ServletContextImpl.java:372)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-27 22:01:38,974 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2023-05-27 22:01:38,976 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2023-05-27 22:01:38,978 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2023-05-27 22:01:39,147 INFO (HikariPool.java:565)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e9802fe
+2023-05-27 22:01:39,156 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2023-05-27 22:04:18,078 INFO (AbstractOpenApiResource.java:369)- Init duration for springdoc-openapi is: 81 ms
+2023-05-27 22:04:47,725 INFO (QuartzScheduler.java:585)- Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-27 22:04:47,726 INFO (Undertow.java:259)- stopping server: Undertow - 2.3.6.Final
+2023-05-27 22:04:47,729 INFO (ServletContextImpl.java:372)- Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-27 22:04:47,733 INFO (SchedulerFactoryBean.java:847)- Shutting down Quartz Scheduler
+2023-05-27 22:04:47,733 INFO (QuartzScheduler.java:666)- Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-05-27 22:04:47,733 INFO (QuartzScheduler.java:585)- Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-05-27 22:04:47,733 INFO (QuartzScheduler.java:740)- Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-05-27 22:04:47,856 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2023-05-27 22:04:47,864 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
