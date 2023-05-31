@@ -28,7 +28,7 @@ public class HomeBookRespDto {
      * 小说ID
      */
     @Schema(description = "小说ID")
-    private Integer bookId;
+    private Long bookId;
 
     /**
      * 小说封面地址
@@ -41,6 +41,18 @@ public class HomeBookRespDto {
      */
     @Schema(description = "小说名")
     private String bookName;
+
+    /**
+     * 作者名称
+     */
+    @Schema(description = "作者名称")
+    private String authorName;
+
+    /**
+     * 小书描述
+     */
+    @Schema(description = "小说描述")
+    private String bookDesc;
 
 
 

@@ -12,8 +12,7 @@ import org.springframework.stereotype.Service;
 * @createDate 2023-05-25 21:41:48
 */
 @Service
-public class PayAlipayServiceImpl extends ServiceImpl<PayAlipayMapper, PayAlipay>
-    implements PayAlipayService{
+public class PayAlipayServiceImpl implements PayAlipayService{
 
 }
 
